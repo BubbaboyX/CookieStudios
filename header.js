@@ -9,15 +9,15 @@ function set() {
     Games.tabIndex=0
     Account.tabIndex=0
 
-    Home.onclick=() => {window.location.href="/"}
-    About.onclick=() => {window.location.href="about.html/"}
-    Games.onclick=() => {window.location.href="games.html/"}
-    Account.onclick=() => {window.location.href="account.html/"}
+    Home.onclick=() => {window.location.href="index.html"}
+    About.onclick=() => {window.location.href="about.html"}
+    Games.onclick=() => {window.location.href="games.html"}
+    Account.onclick=() => {window.location.href="account.html"}
 
-    Home.onkeydown=(key) => {if (key.key=="Tab") return;window.location.href="/"}
-    About.onkeydown=(key) => {if (key.key=="Tab") return;window.location.href="about.html/"}
-    Games.onkeydown=(key) => {if (key.key=="Tab") return;window.location.href="games.html/"}
-    Account.onkeydown=(key) => {if (key.key=="Tab") return;window.location.href="account.html/"}
+    Home.onkeydown=(key) => {if (key.key=="Tab") return;window.location.href="index.html"}
+    About.onkeydown=(key) => {if (key.key=="Tab") return;window.location.href="about.html"}
+    Games.onkeydown=(key) => {if (key.key=="Tab") return;window.location.href="games.html"}
+    Account.onkeydown=(key) => {if (key.key=="Tab") return;window.location.href="account.html"}
 }
 
 window.onload=set
