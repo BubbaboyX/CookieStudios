@@ -15,6 +15,9 @@
     position: relative;
     left: 60px;
 }
+#ee:hover {
+    color: white;
+}
 .header-text:hover {
     color: white;
     cursor: pointer;
