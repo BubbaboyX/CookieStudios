@@ -1,0 +1,78 @@
+#header {
+    display: inline-block;
+    white-space: nowrap;
+    background-color: rgba(237, 178, 100, 0.429);
+    max-height: 100%;
+    position: sticky;
+    text-align: left;
+    font-family: monospace;
+    font-size: xx-large;
+    width:100%;
+}
+.header-text {
+    display: inline-block;
+    white-space: nowrap;
+    position: relative;
+    left: 60px;
+}
+.header-text:hover {
+    color: white;
+    cursor: pointer;
+}
+.header-text:focus {
+    color: white;
+    cursor: pointer;
+}
+.header-text:active {
+    color: rgb(20, 117, 96);
+    cursor: pointer;
+}
+#title {
+    position: relative;
+    left: 6px;
+    display: inline-block;
+    white-space: nowrap;
+}
+#logo {
+    position: relative;
+    top: 5px;
+    left: 4px;
+}
+body {
+    background-color: cadetblue;
+}
+#logo-big {
+    position: relative;
+    top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#title-big {
+    text-align: center;
+    font-family: monospace;
+    position: relative;
+    top: -10px;
+    font-size: 100px;
+}
+#subtitle {
+    text-align: center;
+    font-family: monospace;
+    position: relative;
+    top: -60px;
+    font-size: 40px;
+}
+#maain {
+    font-size: xx-large;
+    font-family: monospace;
+}
+button {
+    margin: 0;
+    position: relative;
+    left: 50%;
+    bottom: 50px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: xx-large;
+    border-radius: 10px;
+}
