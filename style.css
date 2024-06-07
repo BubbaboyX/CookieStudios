@@ -14,6 +14,7 @@
     white-space: nowrap;
     position: relative;
     left: 60px;
+    padding-right: 20px;
 }
 #ee:hover {
     color: white;

@@ -1,14 +1,16 @@
 function set() {
-    const Home=document.querySelector("#Home")
-    const About=document.querySelector(".header-text#About")
-    const Games=document.querySelector(".header-text#Games")
-    const Account=document.querySelector(".header-text#Account")
-    const EE=document.querySelector(".header-text#EE")
+    const Home=document.createElement("p");Home.innerHTML="Home";Home.className="header-text"
+    const About=document.createElement("p");About.innerHTML="About";About.className="header-text"
+    const Games=document.createElement("p");Games.innerHTML="Games";Games.className="header-text"
+    const Account=document.createElement("p");Account.innerHTML="Account";Account.className="header-text"
+    const EE=document.createElement("p");EE.innerHTML="Easter Egg";EE.className="header-text"
+    const Sep=document.createElement("p");Sep.innerHTML="";Sep.className="header-text"
 
     Home.tabIndex=0
     About.tabIndex=0
     Games.tabIndex=0
     Account.tabIndex=0
+    EE.style.opacity="0%"
 
     Home.onclick=() => {window.location.href="index"}
     About.onclick=() => {window.location.href="about"}
@@ -20,6 +22,12 @@ function set() {
     About.onkeydown=(key) => {if (key.key=="Tab") return;window.location.href="about.html"}
     Games.onkeydown=(key) => {if (key.key=="Tab") return;window.location.href="games.html"}
     Account.onkeydown=(key) => {if (key.key=="Tab") return;window.location.href="account.html"}
+
+    document.body.querySelector("div#header").appendChild(Home)
+    document.body.querySelector("div#header").appendChild(About)
+    document.body.querySelector("div#header").appendChild(Games)
+    document.body.querySelector("div#header").appendChild(Account)
+    document.body.querySelector("div#header").appendChild(EE)
 }
 
 window.onload=set
