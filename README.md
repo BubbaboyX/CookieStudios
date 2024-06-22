@@ -6,6 +6,7 @@ The offical website for Cookie Games
 
 - [x] OST Page
 - [x] Update header code
-- [ ] Accounts
-  - [ ] Payment Proccessing
-  - [ ] Profiles
+- [ ] Move to a new hosting service
+  - [ ] Accounts
+  -   [ ] Payment Proccessing
+  -   [ ] Profiles
