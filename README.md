@@ -8,5 +8,5 @@ The offical website for Cookie Games
 - [x] Update header code
 - [ ] Move to a new hosting service
   - [ ] Accounts
-  -   [ ] Payment Proccessing
-  -   [ ] Profiles
+    - [ ] Payment Proccessing
+    - [ ] Profiles
