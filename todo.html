@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Cookie Todo List" property="og:title" />
+    <meta content="Simple Todo List" property="og:description" />
+    <meta content="https://cookiegamesstudios.com" property="og:url" />
+    <title>Cookie Studios</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <script src="header.js"></script>
+</head>
+<body>
+    <div id="header">
+        <img src="favicon.png" alt="Cookie Studios Logo" id="logo" align="left" width="100px" height="100px">
+        <h2 id="title">Cookie Todo List</h2>
+    </div>
+    
+    <div id="main">
+        <br>
+        <p id="subtitle">TODO LIST</p>
+        <button id="add-task">Add Task</button>
+        <center id="tasks"></center>
+    </div>
+    <script>
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+        var TaskList=[]       
+        function AddTask() {
+            const taskDiv = document.createElement("div");
+            const taskName = document.createElement("input");
+            const taskCheck = document.createElement("input");
+            const taskRemove = document.createElement("input");
+            taskCheck.type="checkbox"
+            taskCheck.style.transform="scale(1.5)"
+            taskName.style.backgroundColor="rgba(0,0,0,0)"
+            taskRemove.type="Button"
+            taskRemove.value="Remove"
+            taskRemove.onclick=() => {
+                taskRemove.parentElement.remove()
+            }
+            taskRemove.style.fontSize="30px"
+            taskDiv.appendChild(taskName)
+            taskDiv.appendChild(taskCheck)
+            taskDiv.appendChild(taskRemove)
+            taskDiv.className="task"
+            document.getElementById("tasks").appendChild(taskDiv)
+        }
+        document.getElementById("add-task").onclick=AddTask
+        document.onclose = () => {}
+    </script>
+</body>
+</html>
